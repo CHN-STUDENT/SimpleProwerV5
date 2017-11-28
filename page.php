@@ -5,7 +5,7 @@ $this->need('header.php'); ?>
 <article id="post_list">
 <section class="post">
 	<h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
-	<p><?php $this->date('Y-m-d'); ?></p>
+	<small class="meta"><?php $this->date('Y-m-d'); ?></small>
 	<p><?php $this->content(''); ?></p>
 	</section>
 </article>
