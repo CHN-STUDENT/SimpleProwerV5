@@ -1,7 +1,7 @@
 /* ------------------------------------
  * ProwerV5 For Typecho
  *
- * @author	Noisky＆XiaZhanJian
+ * @author	Noisky&XiaZhanJian
  * @link	https://xiazhanjian.com
  * @update	2017-11-30
  * @原作者  摄氏度
@@ -43,8 +43,9 @@ input[type^="radio"] {border:none; background:none; width:auto;}
 #menu {float:left; font-size:16px; line-height:30px; height:28px; overflow:hidden;}
 #menu li {float:left; margin-right:10px;}
 #menu a {display:block; text-decoration:none; color:#999;}
-#menu a:hover {color:#5f767f;}
-#menu .current {color:#000; font-size:20px; line-height:22px;}
+#menu a:hover {color:#000;}
+/*#menu .current {color:#000; font-size:20px; line-height:22px;}*/
+#menu .current a{color:#000;}
 #menu li ul {display:none;}
 code {font:14px/1.5 Consolas,"Andale Mono","DejaVu Sans Mono",monospace; border: 1px solid #ccc;border-radius: 5px;padding:2px 4px;color:#C13;  word-break:break-word;}
 pre {max-width:100%; overflow:auto; padding:1em; margin-bottom:.5em; line-height:1.6; font-size:15px; border: 1px solid #ccc; border-radius: 5px;}
@@ -113,6 +114,7 @@ input#author,input#mail,input#url {width: 31.5%; padding: 4px 4px;}
 /* 多屏幕适配 */
 @media print, screen and (max-width:768px) {
 #wrap {margin:0 auto;width:auto;padding: 30px 20px;}
+/*#toolbar{margin: 0 auto;padding: 50px 30px 0px;}*/
 #toolbar{display:none;}
 .post img {max-width:100%; height:auto;}
 .post {border:none; box-shadow:none; margin-bottom: 10px;}
