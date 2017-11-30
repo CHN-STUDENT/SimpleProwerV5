@@ -1,4 +1,11 @@
-
+/* ------------------------------------
+ * ProwerV5 For Typecho
+ *
+ * @author	Noisky＆XiaZhanJian
+ * @link	https://xiazhanjian.com
+ * @update	2017-11-30
+ * @原作者  摄氏度
+ * --------------------------------- */
 body,h1,h2,h3,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
 header,footer,article,section,nav,menu,hgroup {display:block;}
 body {font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif; line-height:1.6; background:#1a1a1a url(images/bg.png) repeat;}
@@ -43,8 +50,9 @@ code {font:14px/1.5 Consolas,"Andale Mono","DejaVu Sans Mono",monospace; border:
 pre {max-width:100%; overflow:auto; padding:1em; margin-bottom:.5em; line-height:1.6; font-size:15px; border: 1px solid #ccc; border-radius: 5px;}
 pre code {padding:0;border:0px;}
 pre,code{background:#fafafa;}
-#post_list section {border-bottom:1px dashed #bbb; margin-bottom:20px;}
-.meta {font-size:12px; margin-bottom:20px; color:#999; display:block;}
+#post_list section {border-bottom: 1px solid #dddddd; margin-bottom:20px;}
+.post-title {font-size:24px;}
+.post-meta {font-size:12px; margin-bottom:20px; color:#999; display:block;}
 #post_content {padding-top:10px;}
 .post,.page {font-size:16px;letter-spacing:1px;}
 .page h1 {margin-bottom:20px;}
@@ -55,19 +63,59 @@ pre,code{background:#fafafa;}
 .post input {height:22px; line-height:22px;}
 blockquote {border:1px dashed #ccc; border-radius:5px; background:#fafafa; padding:10px; margin:10px 0; font-size:14px;}
 blockquote p:last-child {margin-bottom:0;}
-.post img {max-width:630px;}
+.post img {max-width: 100%; height: auto;}
 .page-navigator {margin-top:20px; list-style:none; font-size:12px; height:30px; line-height:30px; clear:both;}
 .page-navigator li {margin-right:5px; float:left; display:inline;}
 .page-navigator li a {background:#fff; display:block; width:28px; text-align:center; border:1px solid #eee; text-decoration:none; color:#666;}
 .page-navigator li a:hover,.page-navigator li.current a {background:#eee; border-color:#ddd; color:#444;}
+.tags a {margin: 0px 5px;}
 #nopage {text-align:center; padding:180px 0 100px; background:url(images/404.png) no-repeat center 70px;}
+/* Comment */
+#comments {margin-top:20px; word-break:break-all;}
+#comments p {margin-bottom:15px;}
+.comments_count {text-align:right; margin:10px 0; font-size:12px; color:#999;}
+.comment-child {margin-left:15px; border-top:1px dashed #ddd; padding-top:15px;}
+.comment-head {font-size:16px;}
+.comment-head p{margin-left:0px !important;}
+.comment-list li {border-bottom:1px solid #ddd; margin-bottom:20px; position:relative;}
+.comment-list .comment-children li {border-bottom:none; margin-bottom:0;}
+.comment-list li.comment-by-author {}
+.comment-reply {position:absolute; top:0; right:0; font-size:12px; line-height:18px;}
+.comment-child .comment-reply {top:15px;}
+.comment-reply a {font-size:12px; border:none; color:#888;}
+.comment-reply a:hover {color:#444;}
+.comment-meta {float:right; color:#999; font-size:12px; margin-right:35px;}
+.comment-meta a {color:#999;}
+.comment-author {float:left; font-size:12px; height:20px;}
+.comment-author cite.fn {font-style:normal;}
+.comment-body {overflow:hidden;}
+.comment-body p {margin-left:42px; clear:both;}
+.comments_hr {border-bottom: 1px solid #dddddd;}
+img.avatar {float:left; margin-right:10px;}
+#comment_form {padding-right:10px;}
+.respond li {border-bottom:none;}
+.respond hr {border-top: 1px solid #dddddd;}
+.respond .cancel-comment-reply {font-size:11px; margin-left: 5px;}
+.respond .cancel-comment-reply a {color:#aaa;}
+.respond .cancel-comment-reply a:hover {color:#444;}
+#comment_form p {font-size:12px; margin:0 0 5px; clear:left;}
+#comment_form label {font-size:12px; color:#555; display:block;}
+#comment_form label .required {color:#C04E37; padding-left:5px;}
+#comment_form textarea {font-size:14px; height:95px; line-height:24px; padding:3px 4px; width:100%; resize: vertical;}
+#comment_form button {background: -webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#333)); border: 1px solid #333; border-radius: 3px; color: #fff; font-size: 14px; cursor: pointer; text-shadow: 1px 1px #000; height: 32px; line-height: 32px; width: 25%; text-align: center; vertical-align: top;}
+#comment_form button:hover {background:#222; border-color:#000;}
+.login_meta {margin-bottom:10px;}
+.login_meta li {float:none;}
+.login_meta input {font-size: 14px; padding: 5px 0;}
+input#author,input#mail,input#url {width: 31.5%; padding: 4px 4px;}
 #footer {margin-bottom:30px; text-align:center; font-size:12px; color:#5d6673; text-shadow:-1px -1px #000;}
 #footer a {color:#5d6673;}
+/* 多屏幕适配 */
 @media print, screen and (max-width:768px) {
-#wrap {margin:0 auto;width:auto}
+#wrap {margin:0 auto;width:auto;padding: 30px 20px;}
 #toolbar{display:none;}
 .post img {max-width:100%; height:auto;}
 .post {border:none; box-shadow:none; margin-bottom: 10px;}
-.page-navigator {margin: 0px 0px 0px 15px;}
 #content{padding-top:30px;}
+input#author,input#mail,input#url {width: 100%;margin-bottom: .8em;}
 }

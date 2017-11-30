@@ -1,16 +1,18 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit;?>
 <!DOCTYPE html>
 <html>
 <head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="content-type" content="text/html; charset=<?php $this->options->charset(); ?>" />
-<meta name="viewport" content="width=device-width,user-scalable=no">
-<title><?php $this->archiveTitle(' &raquo; ', '', ' - '); ?><?php $this->options->title(); ?></title>
-<link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('style.css'); ?>" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>">
-<link rel="shortcut icon" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>">
-<!–[if IE]>
-<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-<![endif]–>
-<?php $this->header('generator=&template=&pingback=&xmlrpc=&wlw=&rss1=&rss2=&atom='); ?>
+    <meta http-equiv="content-type" content="text/html; charset=<?php $this->options->charset(); ?>" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title><?php $this->archiveTitle(' &raquo; ', '', ' - '); ?><?php $this->options->title(); ?></title>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('style.css'); ?>" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>">
+    <link rel="shortcut icon" href="<?php $this->options->themeUrl('images/favicon.ico'); ?>">
+    <!--[if IE]>
+        <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <?php $this->header('generator=&template=&pingback=&xmlrpc=&wlw=&rss1=&rss2=&atom='); ?>
 </head>
 <body>
 <div id="top">
@@ -41,7 +43,7 @@
 		<div id="toolbar">
 		<div id="rss"><a href="<?php $this->options->feedUrl(); ?>" title="RSS Feed">RSS</a></div>
         <form id="searchform" method="post" action="<?php $this->options->siteUrl(); ?>">
-            <input type="text" name="s" class="text" size="20" required />
+            <input type="text" name="s" class="text" size="20" placeholder="Search" required />
             <button type="submit">搜索</button>
         </form>
 		</div>
