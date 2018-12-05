@@ -3,6 +3,9 @@ ProwerV5 For Typecho
 
 勉强能用但已经弃坑。
 
+
+![demo](demo.png)
+
 ------------
 
 看到了Prower大大的WordPress主题[ProwerV5](http://www.prower.cn/work/2200 "ProwerV5")十分简洁，也十分喜欢，就想把这个主题搞成Typecho的主题。
