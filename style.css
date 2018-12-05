@@ -47,10 +47,14 @@ input[type^="radio"] {border:none; background:none; width:auto;}
 /*#menu .current {color:#000; font-size:20px; line-height:22px;}*/
 #menu .current a{color:#000;}
 #menu li ul {display:none;}
-code {font:14px/1.5 Consolas,"Andale Mono","DejaVu Sans Mono",monospace; border: 1px solid #ccc;border-radius: 5px;padding:2px 4px;color:#C13;  word-break:break-word;}
+code,table {font:14px/1.5 Consolas,"Andale Mono","DejaVu Sans Mono",monospace; border: 1px solid #ccc;border-radius: 5px;padding:2px 4px;color:#C13;  word-break:break-word;}
 pre {white-space: pre-wrap;word-wrap: break-word;max-width:100%; overflow:auto; padding:1em; margin-bottom:.5em; line-height:1.6; font-size:15px; border: 1px solid #ccc; border-radius: 5px;}
 pre code {padding:0;border:0px;}
 pre,code{background:#fafafa;}
+table{border:1px solid #ddd;border-radius:0;padding:0 0}
+table{border:1px solid #ddd;border-radius:0;padding:0 0}
+td,th{border-radius:5px;border:1px dashed #ccc;border-radius:5px;background:#fafafa;padding:10px;margin:10px 0;font-size:14px;color:#C13}
+td{color:#000}
 #post_list section {border-bottom: 1px solid #dddddd; margin-bottom:20px;}
 .post-title {font-size:24px;}
 .post-meta {font-size:12px; margin-bottom:20px; color:#999; display:block;}
